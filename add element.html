@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<select id="S1" size="5">
+  <option value="0">apple</option>
+  <option value="1">mango</option>
+  <option value="2">strawberry</option>
+  <option value="3">avacado</option>
+  </select>
+  </br>
+  <p>click the button to add an item</p>
+  <input type="button" value="Add item" onclick="myfun();"/>
+  
+<script>
+	function myfun(){
+	var r = document.getElementById("S1");
+	var option=document.createElement("option");
+	option.text= "kiwi";
+	r.add(option);
+	}
+	</script>
